@@ -8,12 +8,14 @@
 
 /* Begin PBXBuildFile section */
 		D386840F24ACBC1A006D1EA7 /* fram.h in Headers */ = {isa = PBXBuildFile; fileRef = D386840D24ACBC1A006D1EA7 /* fram.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D386841624ACBC3E006D1EA7 /* Testxxx.swift in Sources */ = {isa = PBXBuildFile; fileRef = D386841524ACBC3E006D1EA7 /* Testxxx.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		D386840A24ACBC1A006D1EA7 /* fram.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = fram.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D386840D24ACBC1A006D1EA7 /* fram.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = fram.h; sourceTree = "<group>"; };
 		D386840E24ACBC1A006D1EA7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D386841524ACBC3E006D1EA7 /* Testxxx.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Testxxx.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,6 +49,7 @@
 			isa = PBXGroup;
 			children = (
 				D386840D24ACBC1A006D1EA7 /* fram.h */,
+				D386841524ACBC3E006D1EA7 /* Testxxx.swift */,
 				D386840E24ACBC1A006D1EA7 /* Info.plist */,
 			);
 			path = fram;
@@ -95,6 +98,7 @@
 				TargetAttributes = {
 					D386840924ACBC1A006D1EA7 = {
 						CreatedOnToolsVersion = 11.5;
+						LastSwiftMigration = 1150;
 					};
 				};
 			};
@@ -131,6 +135,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D386841624ACBC3E006D1EA7 /* Testxxx.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -260,6 +265,7 @@
 		D386841324ACBC1A006D1EA7 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = HNN4C9PVGY;
@@ -276,6 +282,8 @@
 				PRODUCT_BUNDLE_IDENTIFIER = test.fram;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SUPPORTS_MACCATALYST = NO;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -284,6 +292,7 @@
 		D386841424ACBC1A006D1EA7 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = HNN4C9PVGY;
@@ -300,6 +309,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = test.fram;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SUPPORTS_MACCATALYST = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
